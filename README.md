@@ -3,7 +3,7 @@
 
 | Chapter 	| Category                                                                                                          	| Done(:white_check_mark:) 	|
 |:-------:	|-------------------------------------------------------------------------------------------------------------------	|:------------------------:	|
-|    1    	| [Strategy Pattern](https://github.com/sgc109/design-pattern-study/tree/master/01-Strategy-Pattern)                	|   (:white_check_mark:)   	|
+|    1    	| [Strategy Pattern](https://github.com/sgc109/design-pattern-study/tree/master/01-Strategy-Pattern)                	|    :white_check_mark:    	|
 |    2    	| Observer Pattern                                                                                                  	|                          	|
 |    3    	| Decorator Pattern                                                                                                 	|                          	|
 |    4    	| Factory Pattern                                                                                                   	|                          	|
