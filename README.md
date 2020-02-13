@@ -2,8 +2,8 @@
 
 
 | Chapter 	| Category                        	| Done(:white_check_mark:) 	|
-|:-------:	|---------------------------------	|--------------------------	|
-|    1    	| Strategy Pattern                	|                          	|
+|:-------:	|---------------------------------	|:------------------------:	|
+|    1    	| Strategy Pattern                	|   (:white_check_mark:)   	|
 |    2    	| Observer Pattern                	|                          	|
 |    3    	| Decorator Pattern               	|                          	|
 |    4    	| Factory Pattern                 	|                          	|
