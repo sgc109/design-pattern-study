@@ -12,7 +12,8 @@
 
 ### 공통점
 * Factory Pattern 임
-* 둘 모두 구체적인 구현으로부터 decoupling 
+* 둘 모두 구체적인 구현으로부터 decoupling
+* 왜냐하면 factory 를 사용하는 client 입장에서는 concrete 한 class 를 몰라도 되며, high-level 의 abstract 만 가지고 동작하기 
 
 ### 차이점
 * Factory method 는 Inheritance 을 통해 object 를 생성하며, Abstract factory 는 Object composition 을 통해 생성
