@@ -57,11 +57,8 @@ abstract class Pizza {
     Clams clams;
 
     abstract void prepare();
-
     void bake() {}
-
     void cut() {}
-
     void box() {}
 }
 
