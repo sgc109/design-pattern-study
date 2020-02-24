@@ -1,3 +1,9 @@
+/* 
+Factory Method 소스코드에서 같은 CheesePizza 여도 지역에 따라 재료가 달라지는 코드가 추가되는 경우,
+지역에 따른 Factory 를 만들어 Pizza 의 subclass(e.g. CheesePizza) 에 넣어주어 사용하는 식으로
+Abstract Factory Pattern 을 활용할 수 있음
+*/
+
 class Dough {}
 class Sauce {}
 class Cheese {}
