@@ -1,5 +1,3 @@
-package factory;
-
 class Pizza {
     void prepare() {}
     void bake() {}
