@@ -17,3 +17,4 @@
 
 ### 차이점
 * Factory method 는 Inheritance 을 통해 object 를 생성하며, Abstract factory 는 Object composition 을 통해 생성
+* Factory method 는 하나의 object 의 생성만을 담당할 수 있으며, Abstract factory 는 object 의 family (서로 관련있는 여러개의 object)의 생성을 담당할 
