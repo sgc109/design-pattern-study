@@ -21,4 +21,4 @@
 
 #### +추가 : Simple Factory
 * 정확히는 pattern 은 아니지만, seperation of concern 으로 object creation 부분을 별도의 클래스(와 한 메소드)로 분리한 방식
-* 말 그대로 단순한 
+* 말 그대로 구현이 단순하여 유용
