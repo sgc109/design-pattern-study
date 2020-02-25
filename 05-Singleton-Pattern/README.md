@@ -21,6 +21,6 @@
   - class 가 로드되는 순간 초기화 (static 으로 선언된 instance 에 *new* 키워드로 초기화) (lazy initialization 아님)
   - lock (synchronized static method) 
   - double-checked lock (null-check, lock, and additional null-check)
-  - + 그 외 책에 나와있지 않은 방법
+  - +그 외 책에 나와있지 않은 방법
   - enum 으로 구현할 수도 있음 (by Effective Java 3rd, item3) (lazy initialization 아님)
   - LazyHolder 라는 방법도 있음 (static nested class) (현재까지 가장 완벽하다고 평가받는 이디엄이라고 한다)
