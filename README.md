@@ -12,7 +12,7 @@
 |    2    	| [Observer Pattern](02-Observer-Pattern)                                 |                  |
 |    3    	| [Decorator Pattern](03-Decorator-Pattern)                               |                  |
 |    4    	| [Factory Pattern](04-Factory-Pattern)                                   |:white_check_mark:|
-|    5    	| [Singleton Pattern](05-Singleton-Pattern)                               |                  |
+|    5    	| [Singleton Pattern](05-Singleton-Pattern)                               |:white_check_mark:|
 |    6    	| [Command Pattern](06-Command-Pattern)                                   |                  |
 |    7    	| [Adapter and Facade Patterns](07-Adapter-and-Facade-Patterns)           |                  |
 |    8    	| [Template Method Pattern](08-Template-Method-Pattern)                   |                  |
