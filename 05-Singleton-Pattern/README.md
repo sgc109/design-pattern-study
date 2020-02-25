@@ -16,8 +16,8 @@
   - private default constructor
   - instance 를 리턴해줄 static method
 * 싱글스레드
-  - static factory method 에서 null 체크를 하여, null 일 때만 *new* 로 static field 초기화. 그다음 instance 를 리턴
-  - enum 으로 구현할 수도 있음 (by Effective Java 3rd, item3)
+  - lazy initialization (static factory method 에서 null 체크를 하여, null 일 때만 *new* 로 static field 초기화. 그다음 instance 를 리턴)
+  - enum 으로 구현할 수도 있음 (by Effective Java 3rd, item3) (lazy initialization 은 아님)
 * 멀티스레드
   - class 가 로드되는 순간 초기화 (static 으로 선언된 instance 에 *new* 키워드로 초기화)
   - lock (synchronized static method)
