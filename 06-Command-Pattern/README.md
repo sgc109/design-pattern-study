@@ -18,14 +18,15 @@
 1. 각 소켓마다 on/off 버튼이 있는 리모컨
   - 각 소켓에 디바이스를 연결할 수 있다.
 2. 이전 명령 실행취소 기능
-  - Command interface 
+  - Command interface 에 undo() 를 추가한다
 3. 모드가 여러개 있는 디바이스(선풍기)
   - 하나의 소켓에 특정 디바이스의 한가지 모드로 설정할 수 있는 기능을 넣을 수 있다
 4. 매크로 기능
-    - Command 의 배열을 가진 또다른 Concrete Command 를 정의하여 invoker 에 셋팅한다
-    - execute() 에서 반복문을 통해 들고있는 모든 Command 들의 execute() 를 호출한다
-    - 실행취소 기능은, 반복문을 통해 들고있는 모든 Command 들의 undo() 를 호출한다.
-5. 실행취소 여러번
+  - Command 의 배열을 가진 또다른 Concrete Command 를 정의하여 invoker 에 셋팅한다
+  - execute() 에서 반복문을 통해 들고있는 모든 Command 들의 execute() 를 호출한다
+  - 실행취소 기능은, 반복문을 통해 들고있는 모든 Command 들의 undo() 를 호출한다.
+5. 실행취소가 여러번 가능한 기능
+  - request 의 히스토리를 관리
 
 ### 활용 예
 * Job queue, schedulers, thread pools
