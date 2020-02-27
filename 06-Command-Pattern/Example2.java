@@ -1,12 +1,17 @@
-package command;
-
+/*
+7개의 소켓을 가진 만능 리모컨
+- 각 소켓마다 on/off 버튼이 있음
+- global undo 버튼이 하나 있음
+*/
 interface Command {
     void execute();
+
     void undo();
 }
 
 class NoCommand implements Command {
     public void execute() {}
+
     public void undo() {}
 }
 
@@ -59,18 +64,18 @@ class RemoteControl {
 }
 
 class Light {
-    String roomName;
+    String location;
 
-    public Light(String roomName) {
-        this.roomName = roomName;
+    public Light(String location) {
+        this.location = location;
     }
 
     public void on() {
-        System.out.println(roomName + " light on");
+        System.out.println(location + " light on");
     }
 
     public void off() {
-        System.out.println(roomName + " light off");
+        System.out.println(location + " light off");
     }
 }
 
