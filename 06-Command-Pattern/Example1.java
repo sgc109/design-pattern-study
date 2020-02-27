@@ -1,5 +1,7 @@
-package command;
-
+/*
+7개의 소켓을 가진 만능 리모컨
+- 각 소켓마다 on/off 버튼이 있음
+*/
 interface Command {
     void execute();
 }
@@ -43,34 +45,23 @@ class RemoteControl {
             stringBuff.append("[slot " + i + "] " + onCommands[i].getClass().getName()
                     + "         " + offCommands[i].getClass().getName() + "\n");
         }
-        return  stringBuff.toString();
+        return stringBuff.toString();
     }
 }
 
 class Light {
-    String roomName;
+    String location;
 
-    public Light(String roomName) {
-        this.roomName = roomName;
+    public Light(String location) {
+        this.location = location;
     }
 
     public void on() {
-        System.out.println(roomName + " light on");
+        System.out.println(location + " light on");
     }
+
     public void off() {
-        System.out.println(roomName + " light off");
-    }
-}
-
-class LightOffCommand implements Command {
-    Light light;
-
-    public LightOffCommand(Light light) {
-        this.light = light;
-    }
-
-    public void execute() {
-        light.off();
+        System.out.println(location + " light off");
     }
 }
 
@@ -83,6 +74,18 @@ class LightOnCommand implements Command {
 
     public void execute() {
         light.on();
+    }
+}
+
+class LightOffCommand implements Command {
+    Light light;
+
+    public LightOffCommand(Light light) {
+        this.light = light;
+    }
+
+    public void execute() {
+        light.off();
     }
 }
 
