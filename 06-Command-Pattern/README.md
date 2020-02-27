@@ -14,6 +14,8 @@
 | Customer 	|         Waitress         	|     Order     	|   Chef   	|
 |   User   	| Universal Remote Control 	| Device Driver 	|  Device  	|
 
+* **웨이터**가 **주문서**라는 중간매개체에 의해 **요리사**와 Decoupled 되는것 
+
 ### 만능 리모컨 만들기 예제
 1. 각 소켓마다 on/off 버튼이 있는 리모컨
   - 각 소켓에 디바이스를 연결할 수 있다.
