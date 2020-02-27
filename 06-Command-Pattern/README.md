@@ -1,6 +1,5 @@
 ## 06 Command Pattern
 
-
 * Request(Command) 를 Object 로 Encapsulate 하여 해당 Request 를 큐에 넣거나, 로깅을 할 수 있게도 하며, 실행취소도 가능하게 하는 디자인 패턴
 * Command 라는 인터페이스를 통해 실제 액션을 수행하는 클래스와 명령을 내리는 클래스 간의 결합도를 낮춤
 * 명령을 내리는 클래스는 실제 액션이 어떻게 동작하는지 몰라도 되게 하는것
