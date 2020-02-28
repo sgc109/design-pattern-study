@@ -1,9 +1,5 @@
 ## 01 Strategy Pattern
 
-### 적용되는 Design Principle
-1. 변경되는 부분을 변경되지 않는 부분과 분리해라(Identify the aspects of your application that vary and seperate them from what stays the same)
-2. 구현체가 아니라 인터페이스를 사용하여 프로그래밍해라(Program to an interface, not an implementation)
-3. 상속보다 구성을 선호해라(Favor composition over inheritance)
 
 ### 오리 시뮬레이션 게임 구현하기
 * 방법 1
@@ -60,5 +56,10 @@ OO basics 를 잘 따른다고, 그것이 항상 확장가능하고, 유연하�
 개발 도중과 완료 이후 중에 더 시간을 많이 들어가는 것은 개발 완료 이후이기 때문에, reuse 보단 maintainability 와 flexability 를 더 신경써야한다
 
 reuse 를 달성하는 방법은 상속 이외에도 다양한 방법들이 있기때문에 꼭 상속을 사용할 필요는 없다
- 
+
+### 적용되는 Design Principle
+1. 변경되는 부분을 변경되지 않는 부분과 분리해라(Identify the aspects of your application that vary and seperate them from what stays the same)
+2. 구현체가 아니라 인터페이스를 사용하여 프로그래밍해라(Program to an interface, not an implementation)
+3. 상속보다 구성을 선호해라(Favor composition over inheritance)
+
 추가) 상속은 subclass 가 superclass 가 강하게 결합되며, 컴파일 타임에 subclass 의 성격이 정해져버리는 단점이 있어서 좋지 않을 때도 있다. (favor composition over inheritance)
