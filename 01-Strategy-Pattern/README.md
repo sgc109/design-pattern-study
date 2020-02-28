@@ -67,6 +67,7 @@ a.makeSound();
 
 * **여기서 우리는 IS-A 관계인 inheritance 대신 HAS-A 관계인 composition 을 사용한 것인데, 여기서 또다른 Design Principle 이 등장한다.**
 * **Favor composition over inheritance**
+* inheritance  subclass 가 superclass  강하게 결합되며, 컴파일 타임에 subclass 의 성격이 정해져버리는 단점이 있어서 좋지 않을 때도 있다
 * composition 을 사용하면 runtime 에 behavior 를 변경할 수가 있어져, 더 유연한 설계를 가능하게 한다
 * composition 은 여러 디자인패턴에서 사용된다
 
@@ -79,5 +80,3 @@ a.makeSound();
 1. 변경되는 부분을 변경되지 않는 부분과 분리해라(Identify the aspects of your application that vary and seperate them from what stays the same)
 2. 구현체가 아니라 인터페이스를 사용하여 프로그래밍해라(Program to an interface, not an implementation)
 3. 상속보다 구성을 선호해라(Favor composition over inheritance)
-
-추가) 상속은 subclass 가 superclass  강하게 결합되며, 컴파일 타임에 subclass 의 성격이 정해져버리는 단점이 있어서 좋지 않을 때도 있다. (favor composition over inheritance)
