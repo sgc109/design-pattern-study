@@ -28,7 +28,9 @@
   - 이 원칙은 **Program to an interface, not an implementation** 이다.
   - 만약 행위를구체적인 타입으로 선언할 경우 변경에 대한 여지가 사라지게 된다.
 
-예를 들어, Dag 클래스와 Cat 클래스가 Animal 클래스를 상속받고, 각각 makeSound 메소드를 오버라이드하여 각각 bark() 와 meow() 메소드를 호출하는 식의 설계가 있는 경우
+예를 들어, 다음과 같은 클래스가 있다고 할 때
+
+![image](https://user-images.githubusercontent.com/7943694/75550280-ebfaa680-5a74-11ea-98ce-35e41d0988ba.png)
 
 ```java
 Dog d = new Dog();
