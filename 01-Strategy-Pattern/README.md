@@ -10,7 +10,7 @@
   - 일부 서부클래스들은 슈퍼클래스의 일부, 혹은 전체 행위를 할 수 없어야 하는 경우다. 예를 들어, *장난감 오리* 를 나타내는 *RubberDuck* 이라는 서브클래스는 날면 안되기 때문에 *fly* 메소드를 오버라이딩하여 아무것도 하지않도록 해야하며, *나무를 깎아 만든 오리장식* 을 나타내는 *DecoyDuck* 라는 서브클래스는 나는것은 물론 꽥꽥대지도 말아야하기 때문에 *fly* 와 *quack* 메소드 모두 오버라이드 하여 아무 행위도 하지않도록 해야한다. 즉, **재사용을 목적으로 상속을 사용하는 것은 좋지만,  maintenance 측면에서는 그다지 좋지 않다는 것이다**
 <br/>
 
-![image](https://user-images.githubusercontent.com/7943694/75550856-2c0e5900-5a76-11ea-9c00-d99d9eb6a84e.png)
+![image](https://user-images.githubusercontent.com/7943694/75551365-675d5780-5a77-11ea-8278-2f0c8dbdd635.png)
 
 * 방법 2
   - 그렇다면 Interface 는 어떨까?
