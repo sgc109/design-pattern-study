@@ -29,7 +29,7 @@
 #### 방법 3 (Strategy Pattern)
 <br/>
 
-![image](https://user-images.githubusercontent.com/7943694/75552482-bdcb9580-5a79-11ea-8b5d-46bf763b9bb1.png)
+![image](https://user-images.githubusercontent.com/7943694/75566420-fa57bb00-5a92-11ea-94f9-cf561a19dc3c.png)
 
   - 그렇다면, optional 한 behavior 들을 캡슐화하여 오리 subclass 를 생성할 때 행위를 정의해 줄 수는 없을까?
   - 행위들을 interface 로 정의하고, 이를 implements 하는 구체적인 행위들을 정의한뒤, setter method 를 통해 초기화 해준다. 
