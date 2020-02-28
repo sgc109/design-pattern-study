@@ -65,16 +65,15 @@ a.makeSound();
 기존에 오리 subclass에 있던 fly 함수대신 performFly 함수를 선언하고 내부에서 behavior class 에 정의된 fly 함수를 호출한다
 그럼 오리 subclass는 behavior 의 디테일을 신경쓰지않아도 된다
 
-여기서 우리는 IS-A 관계인 inheritance 대신 HAS-A 관계인 composition 을 사용한 것인데, 여기서 또다른 Design Principle 이 등장한다.
-
-Favor composition over inheritance
+* **여기서 우리는 IS-A 관계인 inheritance 대신 HAS-A 관계인 composition 을 사용한 것인데, 여기서 또다른 Design Principle 이 등장한다.**
+* **Favor composition over inheritance**
+* composition 을 사용하면 runtime 에 behavior 를 변경할 수가 있어져, 더 유연한 설계를 
+* composition 은 여러 디자인패턴에서 사용된다
 
 ### 추가 설명
-OO basics 를 잘 따른다고, 그것이 항상 확장가능하고, 유연하며, maintainable 한 설계를 보장해주진 않는다. OO basics 들 중에는 불명확한 부분이 있기때문에 OO basics 를 따른 설계들 중에서도 오랫동안 검증된 방식의 모음이 디자인 패턴인것 
-
-개발 도중과 완료 이후 중에 더 시간을 많이 들어가는 것은 개발 완료 이후이기 때문에, reuse 보단 maintainability 와 flexability 를 더 신경써야한다
-
-reuse 를 달성하는 방법은 상속 이외에도 다양한 방법들이 있기때문에 꼭 상속을 사용할 필요는 없다
+* OO basics 를 잘 따른다고, 항상 extensible & flexible & reusable & maintainable 한 설계를 보장해주진 않는다. OO 의 속성들이 항상 명확하진 않기때문에 OO basics 를 따른 설계들 중에서도 오랫동안 검증된 방식의 모음이 디자인 패턴인것 
+* 개발 도중과 완료 이후 중에 더 시간을 많이 들어가는 것은 개발 완료 이후이기 때문에, reuse 보단 extensibility 와 maintainability 를 더 신경써야한다
+* reuse 를 달성하는 방법은 상속 이외에도 다양한 방법들이 있기때문에 꼭 상속을 사용할 필요는 없다
 
 ### Strategy Pattern 에 적용되는 Design Principles
 1. 변경되는 부분을 변경되지 않는 부분과 분리해라(Identify the aspects of your application that vary and seperate them from what stays the same)
