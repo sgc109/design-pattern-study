@@ -8,7 +8,7 @@
 
 | Chapter 	| Category                                                              	| Done             |
 |:-------:	|------------------------------------------------------------------------	|:---------------: |
-|    1    	| [Strategy Pattern](01-Strategy-Pattern)                                 |                  |
+|    1    	| [Strategy Pattern](01-Strategy-Pattern)                                 |:white_check_mark:|
 |    2    	| [Observer Pattern](02-Observer-Pattern)                                 |                  |
 |    3    	| [Decorator Pattern](03-Decorator-Pattern)                               |                  |
 |    4    	| [Factory Pattern](04-Factory-Pattern)                                   |:white_check_mark:|
