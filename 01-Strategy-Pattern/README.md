@@ -36,7 +36,7 @@
 
 예를 들어, 다음과 같은 클래스가 있다고 할 때
 
-![image](https://user-images.githubusercontent.com/7943694/75551408-7cd28180-5a77-11ea-9695-25f89397482d.png)
+![image](https://user-images.githubusercontent.com/7943694/75551549-cfac3900-5a77-11ea-88a2-5a259fc5e7a0.png)
 
 ```java
 Dog d = new Dog();
