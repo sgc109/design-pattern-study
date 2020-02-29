@@ -20,7 +20,7 @@
   
 ![image](https://user-images.githubusercontent.com/7943694/75609099-2b92c280-5b49-11ea-94f8-1b8c2411d94a.png)
 
-### 실제 세계의 예
+#### 실제 세계의 예
 * Enumeration 과 Iterator
     - Enumeration 은 초기 Collections 타입인 Vector, Stack, Hashtable 등에서 사용되었다
     - Iterator 는 이후 버전에서 생긴 새로운 Collections 클래스들을 위해 생겼다
