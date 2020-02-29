@@ -37,7 +37,7 @@
 
 ### Facade Pattern
 * Adapter 는 incompatible 한 interface 간의 변환을 위한 것
-* Facade 는 기존의 복잡한 interface 를 단순화하기 위해 interface 를 교체하는것 
+* 반면, Facade 는 기존의 복잡한 interface 를 단순화하기 위해 interface 를 교체하는것
 
 |  Pattern  	| Intent                                               	|
 |:---------:	|------------------------------------------------------	|
