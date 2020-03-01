@@ -150,4 +150,10 @@ public House {
 }
 ```
 
-
+### 참고자료
+* Android 의 RecyclerViewAdapter 는 디자인 패턴에서 말하는 Adapter Pattern 을 사용한것인가
+  - https://stackoverflow.com/questions/41626980/are-android-adapters-an-example-of-adapter-design-pattern
+  - 상반되는 의견이 있지만 아니라고봄
+  - 애초에 목적과 구조가 다르다
+  - 우선 어댑터 패턴은 한 인터페이스(Adaptee)를 다른 인터페이스(Target Interface)로 변환하는 것이 목적이다
+  - Adapter Pattern 에서는 Adapter 내에서 Composition 을 통해 function call 을 delegate 하지만, 안드로이드에서는 그렇지 않다
