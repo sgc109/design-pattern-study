@@ -22,6 +22,6 @@
   - lock (synchronized static method) 
   - double-checked lock (null-check, lock, and additional null-check)
 * 그 외 책에 나와있지 않은 방법
-  - enum 으로 구현할 수도 있음 (by Effective Java 3rd, item3) (lazy initialization 아님)
+  - enum 으로 구현할 수도 있음 (by Effective Java 3rd, item3)
   - LazyHolder 라는 방법도 있음 (static nested class) (현재까지 가장 완벽하다고 평가받는 이디엄이라고 한다)
   - 둘 다 멀티스레드에서도 잘 동작
