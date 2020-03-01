@@ -1,5 +1,14 @@
 ## 07 Adapter and Facade Patterns
 
+* 두 패턴 모두 기존의 interface 를 다른 interface 로 대체하여 Clients 와 이들이 사용하는 system 과의 커플링을 낮추는 것을 목적으로 한다.
+* 하지만 둘의 목적과  분명히 다르다
+
+|  Pattern  	| Intent                                               	|
+|:---------:	|------------------------------------------------------	|
+| Decorator 	| Doesn't alter the interface, but adds responsibility 	|
+|  Adapter  	| Converts one interface to another                    	|
+|   Facade  	| Makes an interface simpler                           	|
+
 ### Adapter Pattern
 
 #### 비유
@@ -42,12 +51,6 @@
 * Facade 가 관리하는 subsystem 은 Principle of Least Knowledge 를 지키도록 해야한다
 * 만약 subsystem 이 너무 복잡하고, 너무 많은 클래스가 섞인다면, 추가적인 Facades 들을 만들 수도 있다
 * 단점으로는 복잡도가 감소하고 유지보수성이 증가하지만, 런타임 퍼포먼스가 감소하거나 Wrapper 클래스가 많아질 수 있다
-
-|  Pattern  	| Intent                                               	|
-|:---------:	|------------------------------------------------------	|
-| Decorator 	| Doesn't alter the interface, but adds responsibility 	|
-|  Adapter  	| Converts one interface to another                    	|
-|   Facade  	| Makes an interface simpler                           	|
 
 #### Principle of Least Knowledge
 * Principle of Least Knowledge - talk only to your immediate friends
