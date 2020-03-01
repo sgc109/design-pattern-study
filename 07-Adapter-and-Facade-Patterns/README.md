@@ -38,10 +38,83 @@
 ### Facade Pattern
 * Adapter 는 incompatible 한 interface 간의 변환을 위한 것
 * 반면, Facade 는 기존의 복잡한 interface 를 단순화하기 위해 interface 를 교체하는것
+* Client 는 단 하나의 Friend 인 Facade 만을 통해서 subsystem 을 조작한다(단 하나의 Friend 를 갖는것은 OOP 에서 좋은것이다)
+* Facade 가 관리하는 subsystem 은 Principle of Least Knowledge 를 지키도록 해야한다
+* 만약 subsystem 이 너무 복잡하고, 너무 많은 클래스가 섞인다면, 추가적인 Facades 들을 만들 수도 있다
+* 단점으로는 복잡도가 감소하고 유지보수성이 증가하지만, 런타임 퍼포먼스가 감소하거나 Wrapper 클래스가 많아질 수 있다
 
 |  Pattern  	| Intent                                               	|
 |:---------:	|------------------------------------------------------	|
 | Decorator 	| Doesn't alter the interface, but adds responsibility 	|
 |  Adapter  	| Converts one interface to another                    	|
 |   Facade  	| Makes an interface simpler                           	|
+
+#### Principle of Least Knowledge
+* Principle of Least Knowledge - talk only to your immediate friends
+* 데메테르의 법칙(The law of demeter) 이라고도 불리나 선호하지는 말자 (이름만 봐선 의미를 알수없고, 법칙까진 아니다)
+* 서로 강하게 결합된 많은 클래스들을 가지고, 이 중 하나가 변경 되었을 때 이 변화가 다른 부분에 cascade 되는것을 막는다
+* 여러 클래스들 간에 많은 의존성이 존재할 경우, 이는 유지보수하기 어렵고, 다른 사람이 이해하기 어려운 fragile 한 system 이 된다
+
+#### 호출해도 되는 메소드
+* 자신이 가진 메소드
+* 메소드의 파라미터로 전달되는 객체가 가진 메소드
+* 메소드가 생성하거나 인스턴스화 하는 객체의 메소드
+* 멤버 변수의 메소드
+
+#### 호출하지 말아야 하는 메소드
+* 다른 메소드가 return 한 객체의 메소드
+
+#### 예
+* 위의 원칙을 적용하지 않은 코드
+
+```java
+public float getTemp() {
+    Thermometer thermometer = station.getThermometer(); 
+    return thermometer.getTemperature(); 
+} 
+```
+
+* 원칙을 적용한 코드
+
+```java
+public float getTemp() { 
+    return station.getTemperature(); 
+} 
+```
+
+* 이렇게 하면 우리가 의존하는 클래스의 개수를 줄여준다
+
+놀랍게도 다음의 코드는 Principle of Least Knowledge 를 위반하지만
+
+```java
+public House { 
+    WeatherStation station;
+    
+    // other methods and constructor
+
+    public float getTemp() {
+      return station.getThermometer().getTemperature();
+    }
+}
+```
+
+다음의 코드는 Principle of Least Knowledge 를 위반하지 않는다
+
+```java
+public House { 
+    WeatherStation station;
+
+    // other methods and constructor
+
+    public float getTemp() {
+        Thermometer thermometer = station.getThermometer(); 
+        return getTempHelper(thermometer);
+    }
+
+    public float getTempHelper(Thermometer thermometer) { 
+        return thermometer.getTemperature();
+    } 
+}
+```
+
 
