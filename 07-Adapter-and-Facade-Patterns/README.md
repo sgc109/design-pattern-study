@@ -64,6 +64,34 @@
 * 메소드가 생성하거나 인스턴스화 하는 객체의 메소드
 * 멤버 변수의 메소드
 
+```java
+public class Car {
+    Engine engine;
+    // other instance variables
+
+    public Car() {
+        // initialize engine, etc.
+    }
+
+    public void start(Key key) {
+        Doors doors = new Doors();
+
+        boolean authorized = key.turns(); // 파라미터로 넘어온 객의 메소드는 호출해도 된다
+
+        if (authorized) {
+            engine.start(); // 인스턴스 변수의 메소드는 호출해도 된다
+            updateDashboardDisplay(); // 객체 내의 다른 메소드는 호출해도 된다
+            doors.lock(); // 직접 생성했거나 인스턴스화한 객체의 메소드는 호출해도 된다
+        }
+    }
+
+    public void updateDashboardDisplay() {
+        // update display
+    }
+}
+
+```
+
 #### 호출하지 말아야 하는 메소드
 * 다른 메소드가 return 한 객체의 메소드
 
