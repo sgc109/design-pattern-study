@@ -1,5 +1,7 @@
 ## 08 Template Method Pattern
 
+![image](https://user-images.githubusercontent.com/7943694/75777402-465b7600-5d99-11ea-8ef7-406e62dc1e77.png)
+
 **superclass 가 알고리즘을 정의하고, 단계별로 실행될 메소드 등 로직을 정해놓으면 subclass 에게 일부 로직의 구현만을 맡기는 패턴**
 * 프레임워크에서 많이 사용된다. 
 * 프레임워크는 개발자에게 일부 로직의 구현만 위임하고, 그 로직들이 언제 어떤 로직이 실행될지에 대한 흐름은 직접 제어하기 때문이다.
