@@ -54,7 +54,7 @@ public abstract class CaffeineBeverage {
 * boolean 을 반환하는 hook 을 만들어 template method 내의 if문에서 호출하면 조건부 실행제어가 가능하다
 * 특정 Step 의 실행 직전/후에 subclass 가 react 할 수 있는 통로로 사용될 수 있다
 * 사용 예
-    - JFrame 의 paintㅣ
+    - JFrame 의 paint
     - Applet 의 paint
 
 일부 디테일만 다른 여러 비슷한 로직들을 추상화시켜 공통된부분만 분리시킨 뒤 캡슐화하여 template method 로 만들고 디테일은 subclass 에게 위임하면 중복 코드를 많이 줄일 수 있어서, 로직의 변경도 한 곳에서 관리할수있다.
