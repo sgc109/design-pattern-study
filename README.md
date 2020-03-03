@@ -15,7 +15,7 @@
 |    5    	| [Singleton Pattern](05-Singleton-Pattern)                               |:white_check_mark:|
 |    6    	| [Command Pattern](06-Command-Pattern)                                   |:white_check_mark:|
 |    7    	| [Adapter and Facade Patterns](07-Adapter-and-Facade-Patterns)           |:white_check_mark:|
-|    8    	| [Template Method Pattern](08-Template-Method-Pattern)                   |                  |
+|    8    	| [Template Method Pattern](08-Template-Method-Pattern)                   |:white_check_mark:|
 |    9    	| [Iterator and Composite Patterns](09-Iterator-and-Composite-Patterns)   |                  |
 |    10   	| [State Pattern](10-State-Pattern)                                       |                  |
 |    11   	| [Proxy Pattern](11-Proxy-Pattern)                                       |                  |
