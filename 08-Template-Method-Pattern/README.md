@@ -36,6 +36,7 @@ public abstract class CaffeineBeverage {
 }
 
 ```
+* 일부 디테일만 다른 여러 비슷한 로직들을 추상화시켜 공통된부분만 분리시킨 뒤 캡슐화하여 template method 로 만들고 디테일은 subclass 에게 위임하면 중복 코드를 많이 줄일 수 있으며, 로직의 변경도 한 곳에서 관리할수있다.
 
 ### Template Method
 * 알고리즘이 정의되어있는 메소드다
@@ -56,8 +57,6 @@ public abstract class CaffeineBeverage {
 * 사용 예
     - JFrame 의 paint
     - Applet 의 paint
-
-일부 디테일만 다른 여러 비슷한 로직들을 추상화시켜 공통된부분만 분리시킨 뒤 캡슐화하여 template method 로 만들고 디테일은 subclass 에게 위임하면 중복 코드를 많이 줄일 수 있어서, 로직의 변경도 한 곳에서 관리할수있다.
 
 ### 항상 상속의 형태인것은 아니다 
 * Arrays.sort 는 설계자가 모든 클래스에 대해서 사용할 수 있게 하기 위해 static method 로 정의하였고, 자바의 배열은 상속이 불가능하다는 점으로인해 interface 를 사용했다
