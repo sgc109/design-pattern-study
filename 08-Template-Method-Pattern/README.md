@@ -84,3 +84,56 @@ public abstract class CaffeineBeverage {
 * *Don't call us, we'll call you*
 * Template Method Pattern 이 사용하는 설계 원칙이다
 * high-level 컴포넌트가 low-level 컴포넌트의 로직의 호출 타이밍을 정하고, low-level 컴포넌트는 단지 로직을 정의하기만 하는 원칙이다.
+
+### 실생활 예시
+* JFrame
+```java
+public class MyFrame extends JFrame {
+    public MyFrame(String title) {
+        super(title);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setSize(300, 300);
+        this.setVisible(true);
+    }
+
+    public void paint(Graphics graphics) { // Hook
+        super.paint(graphics);
+        String msg = “I rule !!”;
+        graphics.drawString(msg, 100, 100);
+    }
+
+    public static void main(String[] args) {
+        MyFrame myFrame = new MyFrame(“Head First Design Patterns”);
+    }
+}
+```
+
+* Applets
+```java
+public class MyApplet extends Applet {
+    String message;
+
+    public void init() {
+        message = "Hello World, I’m alive !";
+        repaint(); // Concrete Method of Applet class
+    }
+
+    public void start() {
+        message = "Now I’m starting up...";
+        repaint();
+    }
+
+    public void stop() {
+        message = "Oh, now I’m being stopped...";
+        repaint();
+    }
+
+    public void destroy() {
+        // applet is going away...
+    }
+
+    public void paint(Graphics g) { // Hook
+        g.drawString(message, 5, 15);
+    }
+}
+```
