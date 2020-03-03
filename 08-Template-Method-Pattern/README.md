@@ -63,6 +63,22 @@ public abstract class CaffeineBeverage {
 * Arrays.sort 는 설계자가 모든 클래스에 대해서 사용할 수 있게 하기 위해 static method 로 정의하였고, 자바의 배열은 상속이 불가능하다는 점으로인해 interface 를 사용했다
 * 정렬되는 item 에게 비교 로직의 구현을 맡긴다 
 * Comparable 의 item 이 compareTo 만 구현하면 이를 호출하여 사용하는것은 sort 내에서 호출하는 mergeSort 내에서 한다. 
+```java
+    public static void sort(Object[] a) {
+        Object aux[] = (Object[]) a.clone();
+        mergeSort(aux, a, 0, a.length, 0);
+    }
+
+    private static void mergeSort(Object src[], Object dest[], int low, int high, int off) {
+        for (int i = low; i < high; i++) {
+            for (int j = i; j > low &&
+                    ((Comparable) dest[j - 1]).compareTo((Comparable) dest[j]) > 0; j--) {
+                swap(dest, j, j - 1);
+            }
+        }
+        return;
+    }
+```
 
 ### Hollywood Principle
 * *Don't call us, we'll call you*
