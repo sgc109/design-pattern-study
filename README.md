@@ -10,7 +10,7 @@
 |:-------:	|------------------------------------------------------------------------	|:---------------: |
 |    1    	| [Strategy Pattern](01-Strategy-Pattern)                                 |:white_check_mark:|
 |    2    	| [Observer Pattern](02-Observer-Pattern)                                 |                  |
-|    3    	| [Decorator Pattern](03-Decorator-Pattern)                               |                  |
+|    3    	| [Decorator Pattern](03-Decorator-Pattern)                               |:white_check_mark:|
 |    4    	| [Factory Pattern](04-Factory-Pattern)                                   |:white_check_mark:|
 |    5    	| [Singleton Pattern](05-Singleton-Pattern)                               |:white_check_mark:|
 |    6    	| [Command Pattern](06-Command-Pattern)                                   |:white_check_mark:|
