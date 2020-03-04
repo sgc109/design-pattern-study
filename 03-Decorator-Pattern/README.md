@@ -57,7 +57,4 @@
 ### 실생활 예 - java.io
 ![image](https://user-images.githubusercontent.com/7943694/75877456-21c7d280-5e5b-11ea-9c1a-34d86b2ad5ad.png)
 * java.io 패키지의 상당 부분은 데코레이터 패턴을 기반으로한다
-
-<source>
-
-
+* 잘 보면 위에 나온 모든 클래스 다이어그램의 모양이 닮아있다는 것을 알 수 있다(4가지 요소로 이루어져있다)
