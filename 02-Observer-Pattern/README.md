@@ -40,9 +40,6 @@ class WeatherData {
 * Strive for loosely coupled designs between objects that interact
 * 느슨하게 결합된 설계는 더 유연한 코드를 만든다
 
-### Java built-in Observer Pattern
-<java built-in observer pattern 의 class diagram>
-
 ### 일반적인 observer pattern
 * Subject 와 Observer 로 이루어짐
 * push 방식(subject 만 observer 에게 데이터를 보내줄 수 있음)
