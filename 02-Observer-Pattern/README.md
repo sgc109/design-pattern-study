@@ -48,6 +48,7 @@ class WeatherData {
 * push 방식(subject 만 observer 에게 데이터를 보내줄 수 있음)
 
 ### Java built-in observer pattern
+
 * 특징
   * Observable 과 Observer 로 이루어짐
   * 일반적인 옵저버 패턴의 Subject interface 와는 다르게 Observable 이 클래스임
@@ -60,28 +61,33 @@ class WeatherData {
   * class 를 상속받는방식이어서 우리 나름대로 로직을 구현할수없다
 
 ### java.util Observer 는 Deprecated 
+
 * 자바9 부터 java.util.Observable/Observer 가 deprecated 되었다
 * https://stackoverflow.com/questions/46380073/observer-is-deprecated-in-java-9-what-should-we-use-instead-of-it
+
 #### 이유
-    * Observable 이 serializable 을 구현하짇 않앗고, 모든 멤버가 private 이라 serialize 하지 못한다
-    * Thread safety 하지 않음
-    * 뭐가 변했는지 안알려줌 단순히 변했다는것만 알수있음
-    * 모든 Observable 이 똑같다. instanceof 로 검사하여 어떤 타입으로 타입캐스트하는 로직을 구현해야한다
-    * 그밖에 버그 및 레거시 코드 관리의 어려움 등
+* Observable 이 serializable 을 구현하짇 않앗고, 모든 멤버가 private 이라 serialize 하지 못한다
+* Thread safety 하지 않음
+* 뭐가 변했는지 안알려줌 단순히 변했다는것만 알수있음
+* 모든 Observable 이 똑같다. instanceof 로 검사하여 어떤 타입으로 타입캐스트하는 로직을 구현해야한다
+* 그밖에 버그 및 레거시 코드 관리의 어려움 등
+
 #### 대안
-    * java.beans 에 있는 PropertyChangeSupport 와 PropertyChangedListener (그리고 PropertyChangedEvent)
-    * Listeners 는 많은 타입이 있고 callback method 도있고 casting 할 필요도없다
-    * PropertyChangeListener 추천
-    * Listener 도 역시 Observer Pattern 이다!
+* java.beans 에 있는 PropertyChangeSupport 와 PropertyChangedListener (그리고 PropertyChangedEvent)
+* Listeners 는 많은 타입이 있고 callback method 도있고 casting 할 필요도없다
+* PropertyChangeListener 추천
+* Listener 도 역시 Observer Pattern 이다!
 
 ### pull 방식 vs push 방식
 #### push 방식
+
 * 장점
     * 데이터 변경시에만 알림을 받을 수 있어서 효율적임
 * 단점
     * 모든 옵저버에게 일관된 방식으로 데이터를 줘야하기 때문에 옵저버 입장에서는 필요하지 않은 데이터일지라도 모두 받아야함
     * subject 가 관리하는 새로운 데이터가 추가될 경우 observer 들에게 변경된 데이터를 notify 하는 부분의 코드의 변경이 불가피함
 #### pull 방식
+
 * 장점
     * 각 옵저버들은 필요한 데이터만 getter 메소드를 통해 받아올 수 있음
     * subject 가 관리해야하는 새로운 데이터가 추가되어도 notify 해주는 부분의 코드 변경없이 getter 만 만들어 주면됨
