@@ -1,6 +1,7 @@
 ## 02 Observer Pattern
 
-![image](https://user-images.githubusercontent.com/7943694/75998442-37fd8d80-5f44-11ea-8d4f-9ebac933f5d5.png)
+![image](https://user-images.githubusercontent.com/7943694/75998442-37fd8d80-5f44-11ea-8d4f-9ebac933f5d5.png)  
+
 **객체들간의 일대다 의존관계를 만들어 하나의 객체가 변하면 이 객체에 의존하는 객체들이 모두 알림을 받고 자동으로 업데이트 되는 디자인 패턴**
 
 
@@ -19,8 +20,10 @@ class WeatherData {
     }
 }
 ```
+
 * 문제점
-  - 
+  - display 가 추가될 때마다 코드를 변경해야함
+  - display 를 런타임에 
 
 #### 옵저버 패턴 적용
 * Subject 라는 데이터를 관리하는 단 하나의 대상을 두고 변경시에만 동기화를 하여 Observer 들이 공유하도록 함
