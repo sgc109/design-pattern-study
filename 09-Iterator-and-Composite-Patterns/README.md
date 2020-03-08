@@ -24,7 +24,7 @@
 ![image](https://user-images.githubusercontent.com/7943694/76165973-8908be00-619e-11ea-9bdd-ebdac88b6bc6.png)
 
 * client 가 단 한번의 메소드 호출만으로도 모든 노드에 대해 특정 동작을 수행하게 함으로써 client 가 해야할 일을 단순하게 만들어 준다는 것이 가장 큰 장점이다
-* Iterator pattern 과 함께 사용할 수 있다
+* Iterator pattern 과 함께 사용할 수 있다(재귀적으로 구현)
 
 * internal iteration vs external iteration
   * internal iteration 은 functional programming 에서처럼 client 가 collection 에 대해 operation 을 정해주면 내부적으로 iteration 을 수행하는것
