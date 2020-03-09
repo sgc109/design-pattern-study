@@ -29,3 +29,5 @@
 * internal iteration vs external iteration
   * internal iteration 은 functional programming 에서처럼 client 가 collection 에 대해 operation 을 정해주면 내부적으로 iteration 을 수행하는것
   * external iteration 은 client 가 직접 iteration 을 수행하는것
+* Composite Pattern 에서 Iterator Pattern 을 같이 사용하여 CompositeIterator 를 만들면, 서브 트리를 순회하는 iterator 만 재귀적으로 사용하는 것이 아니라, Client 가 전체 노드를 순회하는 iterator 를 얻을 수 있다.
+* 이를 활용한 예로, 전체 노드들 중 특정 조건에 해당하는 노드만 뽑아 내는 것이 가능하다
