@@ -1,5 +1,7 @@
 ## 04 Factory Pattern
 
+* Factory 패턴은 크게 Factory method 패턴과 Abstract Factory 패턴, 이렇게 두가지가 있다.
+
 ### Factory method pattern
 * super-class 에서 특정 object 를 반환하는 abstract 메소드를 둠으로써, sub-class 에게 object 의 생성을 위임하는 패턴
 * DIP(Dependency Inversion Principal) 을 실천하는 강력한 테크닉 중 하나
