@@ -37,6 +37,8 @@ Proxy Pattern 은 어떤 객체로의 접근을 제어하기 위해 대리자(pr
 ### Virtual Proxy
 * 인스턴스의 생성에 비용이 많이 드는 경우 사용
 * 예를 들어, swing 에서 icon 가 network 상의 이미지를 띄울 때 사용
+* 임시적으로 'image is being loaded...' 같이 임시 메시지를 띄우고
+* 서버에서 이미지를 가져오면, 그제서야 real subject 를 생성하는 식
 
 ### Protection Proxy 
 * Caller 에 기반하여 접근을 제어하는 프록시
