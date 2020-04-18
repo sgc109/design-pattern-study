@@ -13,8 +13,8 @@ Proxy Pattern 은 어떤 객체로의 접근을 제어하기 위해 대리자(pr
 * 유용하다
 * 여러가지 형태로 활용이 된다
 * 대표적인 예
-  * [Remote Proxy]()
-  * [Virtual Proxy]()
+  * [Remote Proxy](#remote-proxy)
+  * [Virtual Proxy](#virtual-proxy)
   * [Protection Proxy](#protection-proxy)
 * 그외의 예
   * Caching Proxy
