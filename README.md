@@ -20,5 +20,5 @@
 |    9    	| [Iterator and Composite Patterns](09-Iterator-and-Composite-Patterns)   |:white_check_mark:|
 |    10   	| [State Pattern](10-State-Pattern)                                       |:white_check_mark:|
 |    11   	| [Proxy Pattern](11-Proxy-Pattern)                                       |:white_check_mark:|
-|    12   	| [Compound Patterns](12-Compound-Patterns)                               |     :runner:     |
-|    13   	| Leftover Patterns                                                       |                  |
+|    12   	| [Compound Patterns](12-Compound-Patterns)                               |:white_check_mark:|
+|    13   	| Leftover Patterns                                                       |     :runner:     |
